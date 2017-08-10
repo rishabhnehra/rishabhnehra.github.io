@@ -1,3 +1,24 @@
-body {
+#hamburger{
+	margin-right: 35px;
+}
 
+body{
+	margin: 0;
+}
+
+.mdc-toolbar__title{
+	color: #FFF;
+}
+
+.hero{
+	text-align: center;
+}
+
+h1{
+	font-weight: 300;
+	font-size: 47px;
+}
+
+h2{
+	font-weight: 400;
 }

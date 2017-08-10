@@ -5,29 +5,57 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Rishabh Nehra</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 	<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<script>window.mdc.autoInit();</script>
     
 </head>
 <body class="mdc-typography">
 	
-	<header class="mdc-toolbar">
-		<div class="mdc-toolbar__row">
-			<section class="mdc-toolbar__section">
-				<span class="mdc-toolbar__title">About</span>
-				<span class="mdc-toolbar__title">About</span>
-				<span class="mdc-toolbar__title">About</span>
-				<span class="mdc-toolbar__title">About</span>
+	<header class="mdc-toolbar" id="transparent">
+		<div class="mdc-toolbar__row" >
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+				<a href="#" class="mdc-toolbar__title">About</a>
+				<a href="#" class="mdc-toolbar__title">Education</a>
+				<a href="#" class="mdc-toolbar__title">Projects</a>
+				<a href="#" id="hamburger" class="mdc-toolbar__title">Contact</a>
 			</section>
 		</div>
-
 	</header>
-	
-	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-	<script>window.mdc.autoInit();</script>
 
+	<div class="mdc-card hero">
+		<h1>Hello, I'm Rishabh Nehra</h1>
+		<p>A Front-end Web Developer</p>
+		<div class="social">
+			<button class="mdc-button">
+				Flat
+			</button>
+		</div>
+	</div>
+
+	<div class="education">
+		<h2>Education</h2>
+		<div class="mdc-card">
+			<p>SRM University</p>
+		</div>
+		<div class="mdc-card">
+			<p>Sunrise Science School</p>
+		</div>
+		<div class="mdc-card">
+			<p>St. Mary's High School</p>
+		</div>
+	</div>
+
+	<div class="mdc-card projects">
+		<h2>Projects</h2>
+	</div>
+
+	<footer>
+		Made by Rishabh Nehra with ❤️
+	</footer>
+	
 </body>
 </html>
