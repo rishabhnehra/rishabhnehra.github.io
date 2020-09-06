@@ -2,8 +2,10 @@ $medium-font-weight: 500;
 $bold-font-weight: 700;
 $red-color: #A4303F;
 $blue-color: #581B98;
+$green-color: #17B978;
 $light-grey-color: #43DDE6;
 $blue-aqua-color: #CAA8F5;
+$yellow-color: #E4FF1A;
 
 *,
 *::before,
@@ -94,7 +96,7 @@ header {
       top: 55px;
       left: -34px;
       background-color: $blue-aqua-color;
-      z-index: 2;
+      // z-index: 2;
     }
     .title {
       font-size: 1.5em;
@@ -152,24 +154,70 @@ header {
       top: 55px;
       left: -34px;
       background-color: $blue-aqua-color;
-      z-index: 2;
+      // z-index: 2;
     }
     .title {
+      display: flex;
+      justify-content: space-between;
       font-size: 1.5em;
+      p {
+        font-weight: $medium-font-weight;
+        font-size: 0.6em;
+        margin-top: 6px;  // To align the designation with company's name
+      }
     }
     .subtitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       font-size: 0.7em;
       color: rgba(255,255,255,0.7);
     }
     .content {
       margin-top: 1.5em;
       font-size: 0.7em;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    }
+  }
+}
+
+.project {
+  margin: 5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: $bold-font-weight;
+    &::after {
+      content: '';
+      height: 6px;
+      width: 75px;
+      margin-top: 5px;
+      border-radius: 5px;
+      background-color: $blue-aqua-color;
     }
   }
 
+  .card {
+    position: relative;
+    background-color: $green-color;
+    border-radius: 9px;
+    padding: 1.3em;
+    width: 326px;
+    margin: 1.75em 0;
 
+    .title {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.5em;
+    }
 
+    .content {
+      margin-top: 1.5em;
+      font-size: 1em;
+    }
+  }
 }
