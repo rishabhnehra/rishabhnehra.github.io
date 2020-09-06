@@ -59,6 +59,10 @@ header {
 
 .education {
   margin: 5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   h3 {
     display: flex;
     flex-direction: column;
@@ -77,46 +81,51 @@ header {
 
   ul {
     border-left: 2px solid $light-grey-color;
-    margin-left: 1.2em;
-  }
 
-  .card {
-    position: relative;
-    background-color: $blue-color;
-    border-radius: 9px;
-    padding: 1.3em;
-    width: 310px;
-    margin: 1.75em 0 1.75em 1.5em;
-    &::after {
-      content: ' ';
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      top: 55px;
-      left: -34px;
-      background-color: $blue-aqua-color;
-      // z-index: 2;
-    }
-    .title {
-      font-size: 1.5em;
-    }
-    .subtitle {
-      font-size: 0.7em;
-      color: rgba(255,255,255,0.7);
-    }
-    .content {
-      margin-top: 1.5em;
-      font-size: 0.7em;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    .card {
+      position: relative;
+      background-color: $blue-color;
+      border-radius: 9px;
+      padding: 1.3em;
+      width: 310px;
+      margin: 1.75em 0 1.75em 1.5em;
+      &::after {
+        content: ' ';
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        top: 55px;
+        left: -34px;
+        background-color: $blue-aqua-color;
+        // z-index: 2;
+      }
+
+      .title {
+        font-size: 1.5em;
+      }
+
+      .subtitle {
+        font-size: 0.7em;
+        color: rgba(255,255,255,0.7);
+      }
+
+      .content {
+        margin-top: 1.5em;
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
   }
 }
 
 .work_experience {
   margin: 5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h3 {
     display: flex;
     flex-direction: column;
@@ -135,47 +144,49 @@ header {
 
   ul {
     border-left: 2px solid $blue-aqua-color;
-    margin-left: 1.2em;
-  }
 
-  .card {
-    position: relative;
-    background-color: $red-color;
-    border-radius: 9px;
-    padding: 1.3em;
-    width: 310px;
-    margin: 1.75em 0 1.75em 1.5em;
-    &::after {
-      content: ' ';
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      top: 55px;
-      left: -34px;
-      background-color: $blue-aqua-color;
-      // z-index: 2;
-    }
-    .title {
-      display: flex;
-      justify-content: space-between;
-      font-size: 1.5em;
-      p {
-        font-weight: $medium-font-weight;
-        font-size: 0.6em;
-        margin-top: 6px;  // To align the designation with company's name
+    .card {
+      position: relative;
+      background-color: $red-color;
+      border-radius: 9px;
+      padding: 1.3em;
+      width: 310px;
+      margin: 1.75em 0 1.75em 1.5em;
+      &::after {
+        content: ' ';
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        top: 55px;
+        left: -34px;
+        background-color: $blue-aqua-color;
+        // z-index: 2;
       }
-    }
-    .subtitle {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.7em;
-      color: rgba(255,255,255,0.7);
-    }
-    .content {
-      margin-top: 1.5em;
-      font-size: 0.7em;
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5em;
+        p {
+          font-weight: $medium-font-weight;
+          font-size: 0.6em;
+          margin-top: 6px;  // To align the designation with company's name
+        }
+      }
+
+      .subtitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.7em;
+        color: rgba(255,255,255,0.7);
+      }
+      
+      .content {
+        margin-top: 1.5em;
+        font-size: 0.7em;
+      }
     }
   }
 }
@@ -218,6 +229,28 @@ header {
     .content {
       margin-top: 1.5em;
       font-size: 1em;
+    }
+  }
+}
+
+.technologies {
+  margin: 5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: $bold-font-weight;
+    &::after {
+      content: '';
+      height: 6px;
+      width: 133px;
+      margin-top: 5px;
+      border-radius: 5px;
+      background-color: $yellow-color;
     }
   }
 }
