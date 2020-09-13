@@ -7,6 +7,7 @@ $light-grey-color: #43DDE6;
 $blue-aqua-color: #CAA8F5;
 $yellow-color: #E4FF1A;
 $pink-color: #EA7DC7;
+$dark-button-color: #3E3636;
 
 *,
 *::before,
@@ -266,4 +267,46 @@ header {
       margin: 2em;
     }
   }
+}
+
+.contact {
+    margin: 5em 0 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: $bold-font-weight;
+      &::after {
+        content: '';
+        height: 6px;
+        width: 133px;
+        margin-top: 5px;
+        border-radius: 5px;
+        background-color: $pink-color;
+      }
+    }
+
+    button {
+      margin: 2em 0 1em 0;
+      color: #FFF;
+      background-color: $dark-button-color;
+      font: inherit;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 0.5em 1.7em;
+      border-radius: 60px;
+      border-style: none;
+      cursor: pointer;
+      outline: none;
+    }
+
+    button:hover {
+      background-color: #221f1f;
+    }
 }
