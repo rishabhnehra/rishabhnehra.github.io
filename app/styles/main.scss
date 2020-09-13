@@ -6,6 +6,7 @@ $green-color: #17B978;
 $light-grey-color: #43DDE6;
 $blue-aqua-color: #CAA8F5;
 $yellow-color: #E4FF1A;
+$pink-color: #EA7DC7;
 
 *,
 *::before,
@@ -251,6 +252,18 @@ header {
       margin-top: 5px;
       border-radius: 5px;
       background-color: $yellow-color;
+    }
+  }
+
+  .logos {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    img {
+      margin: 2em;
     }
   }
 }
