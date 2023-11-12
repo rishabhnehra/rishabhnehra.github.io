@@ -329,3 +329,18 @@ header nav {
 .contact button::hover {
   background-color: #221f1f;
 }
+
+.contact a {
+  margin: 2em 0 1em 0;
+  color: #fff;
+  background-color: var(--dark-button-color);
+  font: inherit;
+  font-size: 24px;
+  font-weight: var(--medium-font-weight);
+  padding: 0.5em 1.7em;
+  border-radius: 60px;
+  border-style: none;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
