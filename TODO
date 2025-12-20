@@ -1,0 +1,10 @@
+- [ ] A new version of portfolio
+- [ ] Use of tailwindcss
+- [ ] Light / Dark mode support
+- [ ] A way to contact or schedule meeting with me
+- [ ] An intro about my working
+- [ ] Work experience with comprehensive details
+- [ ] Side project section
+- [ ] Education section can be optional
+- [ ] Blog section
+- [ ] Social media links
