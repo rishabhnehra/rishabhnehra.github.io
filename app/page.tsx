@@ -1,25 +1,13 @@
-import { Navbar } from "@/components/navbar";
-import { Hero } from "@/components/hero";
-import { About } from "@/components/about";
-import { Skills } from "@/components/skills";
-import { Experience } from "@/components/experience";
-import Projects from "@/components/projects";
-import Contact from "@/components/contact";
-import Footer from "@/components/footer";
+import { PortfolioDesign } from "@/components/designs/portfolio-designs";
+import { activeDesign } from "@/lib/site-design";
+import "./designs/designs.css";
+import "./designs/combined.css";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <div className={`pv pv-${activeDesign} pv-home`}>
+      <a className="pv-skip" href="#portfolio-content">Skip to content</a>
+      <PortfolioDesign design={activeDesign} />
+    </div>
   );
 }

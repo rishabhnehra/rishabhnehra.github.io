@@ -1,0 +1,146 @@
+/* 08 — Typography's opening, editorial stories, and technical field notes. */
+.pv-combined {
+  --paper: #f5f4ee;
+  --ink: #222622;
+  --soft: #62685f;
+  --accent: #254bdf;
+  --rule: #d1d4c8;
+}
+
+.pv-combined .pv-nav {
+  max-width: 1280px;
+  border-bottom: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.pv-combined .pv-wordmark {
+  font: 11px/1.6 var(--font-geist-mono), monospace;
+}
+
+.combined-shell { max-width: 1280px; margin: auto; padding: 0 48px; }
+.combined-hero { padding: 28px 0 0; }
+.combined-hero-meta { display: flex; justify-content: space-between; gap: 20px; }
+
+.combined-hero h1 {
+  font-size: clamp(72px, 14.5vw, 188px);
+  font-weight: 800;
+  letter-spacing: -.075em;
+  line-height: .86;
+  text-transform: uppercase;
+  margin: 30px 0 40px;
+}
+
+.combined-hero h1 > span { display: block; }
+.combined-hero h1 > span + span { color: var(--accent); margin-top: 10px; }
+.combined-asterisk { display: inline-block; font-size: .61em; font-weight: 400; vertical-align: middle; margin-left: .2em; }
+.combined-introduction { display: grid; grid-template-columns: 1.1fr 1fr; gap: 75px; align-items: center; padding-bottom: 40px; }
+.combined-statement { font: 400 38px/1.18 Georgia, serif; letter-spacing: -.035em; }
+.combined-statement em { color: var(--soft); }
+.combined-intro-copy > p { max-width: 450px; font-size: 14px; line-height: 1.85; color: var(--soft); }
+.combined-links { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 24px; font-size: 12px; }
+.combined-links a { border-bottom: 1px solid var(--rule); padding-bottom: 5px; }
+.combined-links a:first-child { border-color: var(--accent); }
+.combined-hero-bottom { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--rule); padding: 20px 0; color: var(--soft); font: 9px/1.7 var(--font-geist-mono), monospace; }
+
+.combined-work { padding-top: 70px; }
+.combined-section-header { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 40px; }
+.combined-section-header h2 { font: 400 48px/1.1 Georgia, serif; letter-spacing: -.035em; margin-top: 12px; }
+.combined-section-header h2 em { color: var(--accent); }
+.combined-story { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 65px; align-items: start; border-top: 1px solid var(--rule); padding: 48px 0; }
+.combined-story-copy { min-width: 0; }
+.combined-story-copy > .pv-label > span { color: var(--accent); }
+.combined-story h3 { font: 400 37px/1.15 Georgia, serif; letter-spacing: -.035em; max-width: 420px; margin: 20px 0 15px; }
+.combined-result { font-size: 14px; color: var(--accent); }
+.combined-summary { font-size: 14px; line-height: 1.85; color: var(--soft); margin-top: 16px !important; max-width: 430px; }
+.combined-decisions { margin-top: 28px; }
+.combined-decisions summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; list-style: none; font-size: 11px; cursor: pointer; border-bottom: 1px solid var(--rule); padding: 10px 0; }
+.combined-toggle { font-size: 19px; line-height: 1; color: var(--accent); }
+.combined-decisions[open] .combined-toggle { transform: rotate(45deg); }
+.combined-decisions dl { display: grid; gap: 16px; padding-top: 20px; }
+.combined-decisions dl > div { display: grid; grid-template-columns: 70px 1fr; gap: 14px; }
+.combined-decisions dt { font: 10px/1.8 var(--font-geist-mono), monospace; color: var(--ink); }
+.combined-decisions dd { font-size: 12px; line-height: 1.8; color: var(--soft); }
+.combined-story-copy > .pv-stack { margin-top: 22px; font-size: 9px; }
+
+.pv-combined .pv-diagram {
+  color: var(--ink);
+  background: #eef0f8;
+  padding: 32px;
+  border: 1px solid var(--rule);
+}
+
+.pv-combined .diagram-caption { margin-bottom: 32px; }
+.pv-combined .diagram-before { background: #c6ccde; }
+.pv-combined .diagram-flow { gap: 10px; }
+.pv-combined .diagram-flow span { min-width: 0; background: var(--paper); padding: 18px 8px; }
+.pv-combined .pv-diagram figcaption { font-size: 9px; line-height: 1.7; margin-top: 30px; }
+.pv-combined .pv-about { border-top: 1px solid var(--rule); padding: 75px 0; }
+.pv-combined .pv-about h2 { font-size: 41px; letter-spacing: -.035em; }
+.pv-combined .pv-career { padding-top: 15px; }
+.pv-combined .pv-career h2 { font: 400 32px/1.15 Georgia, serif; letter-spacing: -.025em; }
+.pv-combined .pv-contact { --soft: #d5ddff; --rule: #ffffff50; max-width: 1280px; padding: 55px 48px 28px; border: 0; background: #254bdf; color: #f5f4ee; }
+.pv-combined .pv-contact h2 { font-size: 59px; letter-spacing: -.04em; }
+.pv-combined .pv-contact a:hover { color: #fff; }
+
+/* Gallery miniature follows the actual hero and first contribution. */
+.thumbnail-combined { background: #f5f4ee; color: #222622; }
+.thumbnail-combined-name { font-size: clamp(37px, 4.3vw, 57px); font-weight: 800; line-height: .86; letter-spacing: -.065em; margin-top: 22px; }
+.thumbnail-combined-name > span { display: block; color: #254bdf; margin-top: 5px; }
+.thumbnail-combined-story { display: grid; grid-template-columns: 1fr 1.2fr; gap: 20px; margin-top: 20px; padding-top: 17px; border-top: 1px solid #d1d4c8; }
+.thumbnail-combined-story small { display: block; font: 6px/1.6 var(--font-geist-mono), monospace; }
+.thumbnail-combined-story b { display: block; font: 18px/1.1 Georgia, serif; letter-spacing: -.03em; margin-top: 8px; }
+.thumbnail-combined-system { background: #eef0f8; color: #222622; border: 1px solid #d1d4c8; padding: 12px; }
+.thumbnail-combined .thumbnail-combined-system i { width: 100%; background: #c6ccde; height: 8px; box-shadow: none; opacity: 1; margin: 7px 0; }
+.thumbnail-combined .thumbnail-combined-system i + i { width: 37.5%; background: #254bdf; }
+.thumbnail-combined-system > span { font: 6px var(--font-geist-mono), monospace; }
+
+@media (max-width: 1000px) {
+  .combined-introduction { gap: 45px; }
+  .combined-story { gap: 35px; }
+  .combined-story h3 { font-size: 32px; }
+  .pv-combined .pv-diagram { padding: 25px; }
+  .pv-combined .diagram-flow { gap: 7px; }
+  .pv-combined .diagram-flow span { font-size: 8px; padding: 16px 7px; }
+}
+
+@media (max-width: 760px) {
+  .combined-shell { padding: 0 24px; }
+  .combined-hero { padding-top: 20px; }
+  .pv-combined .pv-nav { padding: 24px; }
+  .combined-hero h1 { font-size: 17vw; margin: 25px 0 30px; }
+  .combined-introduction { grid-template-columns: 1fr; gap: 24px; padding-bottom: 30px; }
+  .combined-statement { font-size: 32px; }
+  .combined-intro-copy > p { max-width: 550px; font-size: 13px; }
+  .combined-links { margin-top: 20px; }
+  .combined-work { padding-top: 45px; }
+  .combined-section-header { align-items: start; flex-direction: column; gap: 18px; margin-bottom: 30px; }
+  .combined-section-header h2 { font-size: 39px; }
+  .combined-story { grid-template-columns: 1fr; gap: 28px; padding: 35px 0; }
+  .combined-story h3 { font-size: 32px; max-width: 480px; }
+  .combined-summary { max-width: 550px; font-size: 13px; }
+  .combined-decisions { margin-top: 18px; }
+  .pv-combined .pv-diagram { padding: 25px; }
+  .pv-combined .diagram-flow span { font-size: 9px; }
+  .pv-combined .pv-about { padding: 55px 0; }
+  .pv-combined .pv-about h2 { font-size: 34px; }
+  .pv-combined .pv-contact { padding: 36px 24px 24px; }
+  .pv-combined .pv-contact h2 { font-size: 40px; }
+  .thumbnail-combined-name { font-size: 55px; }
+}
+
+@media (max-width: 480px) {
+  .pv-combined .pv-wordmark { font-size: 9px; max-width: 120px; }
+  .combined-hero-meta { flex-direction: column; gap: 5px; }
+  .combined-hero-meta .pv-label { font-size: 8px; }
+  .combined-hero-bottom { flex-direction: column; gap: 7px; font-size: 8px; }
+  .combined-section-header h2 { font-size: 36px; }
+  .combined-story h3 { font-size: 30px; }
+  .combined-decisions dl > div { grid-template-columns: 60px 1fr; gap: 12px; }
+  .pv-combined .pv-diagram { padding: 22px; }
+  .pv-combined .diagram-flow span { padding: 12px; }
+  .pv-combined .pv-contact h2 { font-size: 36px; }
+  .thumbnail-combined-name { font-size: 48px; }
+  .thumbnail-combined-story { gap: 12px; padding-top: 12px; margin-top: 16px; }
+  .thumbnail-combined-story b { font-size: 17px; }
+}

@@ -18,6 +18,33 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Portfolio design previews
+
+Open [the design gallery](http://localhost:3000/designs) to compare eight portfolio directions. Each preview has a bottom navigation bar with previous/next links and a menu for jumping between designs.
+
+| Design | Route |
+| --- | --- |
+| Editorial engineer | `/designs/editorial` |
+| Engineering field notes | `/designs/field-notes` |
+| Quiet personal homepage | `/designs/quiet` |
+| Bold typographic portfolio | `/designs/typographic` |
+| Restrained brutalism | `/designs/restrained` |
+| Neobrutalism | `/designs/neo` |
+| Editorial + technical diagrams | `/designs/diagram-editorial` |
+| Combined / Type + systems | `/designs/combined` |
+
+Design 08 (Combined / Type + systems) is the homepage at `/`. The gallery marks the current homepage design, and all eight preview pages remain available. Preview routes are marked `noindex`; the homepage retains its portfolio metadata. Shared content lives in `lib/designs.ts` and uses professional contributions from `lib/data.ts`. Diagrams are simplified résumé-based illustrations; the designs omit placeholder project/social links and the missing résumé download.
+
+### Switching the homepage design
+
+Change `activeDesign` in `lib/site-design.ts` to any of these slugs: `editorial`, `field-notes`, `quiet`, `typographic`, `restrained`, `neo`, `diagram-editorial`, or `combined`.
+
+```ts
+export const activeDesign: DesignSlug = "combined";
+```
+
+The dev server updates automatically. Build and deploy again to change the hosted homepage. Browsing a preview leaves this setting unchanged.
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More

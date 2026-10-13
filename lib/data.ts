@@ -75,12 +75,12 @@ export const personalInfo: PersonalInfo = {
 export const socialLinks: SocialLink[] = [
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/your-profile",
+    url: "https://www.linkedin.com/in/rishabhnehra",
     icon: "Linkedin",
   },
   {
     name: "GitHub",
-    url: "https://github.com/your-username",
+    url: "https://github.com/rishabhnehra",
     icon: "Github",
   },
 ];
