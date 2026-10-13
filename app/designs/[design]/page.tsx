@@ -6,6 +6,8 @@ import { DesignSwitcher } from "@/components/designs/design-switcher";
 
 type Props = { params: Promise<{ design: string }> };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return designs.map(({ slug }) => ({ design: slug }));
 }

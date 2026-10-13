@@ -56,8 +56,14 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on GitHub Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The site uses Next.js static export (`output: "export"`) with directory URLs (`trailingSlash: true`). Run `pnpm build` to generate the deployable site in `out/`; `next start` is not used for static hosting.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. In the repository's **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions**.
+2. Commit and push the deployment changes to `master`.
+3. Open the **Actions** tab and watch **Deploy portfolio to GitHub Pages**. The deployment job reports the published URL.
+
+The workflow at `.github/workflows/deploy-pages.yml` installs Node.js 24 and the pnpm version in `package.json`, builds using the frozen lockfile, and publishes only `out/`. It runs on every push to `master` and can also be triggered manually with **Run workflow**.
+
+For the `rishabhnehra/rishabhnehra.github.io` repository, the default address is `https://rishabhnehra.github.io/`; no repository `basePath` is needed. The gallery and all eight previews are included in the export. Unknown design URLs return 404.
