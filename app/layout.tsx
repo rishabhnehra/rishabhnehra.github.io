@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rishabh Nehra | Senior Software Developer",
+  title: "Rishabh Nehra",
   description:
     "Portfolio of a Senior Software Developer with 8+ years of experience in React, Next.js, TypeScript, Node.js, and modern web technologies.",
 };
